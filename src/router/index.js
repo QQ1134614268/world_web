@@ -1,6 +1,10 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
+// import Home from '../views/Home'
+import login from '../views/user/login.vue'
+import tree from '../views/root/tree'
+import hello from '../views/hello/Hello'
 
 Vue.use(VueRouter)
 
@@ -11,6 +15,21 @@ const routes = [
     component: Home
   },
   {
+    path: '/user/login',
+    name: '/user/login',
+    component: login
+  },
+  {
+    path: '/btree',
+    name: 'btree',
+    component: tree
+  },
+  {
+    path: '/hello',
+    name: 'hello',
+    component: hello
+  },
+  {
     path: '/about',
     name: 'About',
     // route level code-splitting
@@ -19,7 +38,8 @@ const routes = [
     component: function () {
       return import(/* webpackChunkName: "about" */ '../views/About.vue')
     }
-  }
+
+  },
 ]
 
 const router = new VueRouter({
