@@ -1,0 +1,64 @@
+
+div {
+  border: 1px solid #F00;
+  margin: 3px;
+}
+
+.div_red{
+  border: 1px solid red;
+  margin: 1px;
+}
+.div_black{
+  border: 1px solid black;
+  margin: 1px;
+}
+.div_blue{
+  border: 1px solid blue;
+  margin: 1px;
+}
+
+.div_default {
+  /*默认 浮动 宽高不设*/
+  /*  div冲突,子级覆盖父级*/
+  /*  行内块 part */
+}
+
+.div_block {
+}
+
+.div_inline_block {
+  display: inline-block;
+}
+
+.div_inline_block_left {
+  display: inline-block;
+  float: right;
+}
+
+.div_inline_block_right {
+  display: inline-block;
+  float: right;
+}
+
+.div_100_50 {
+  width: 100px;
+  height: 50px;
+}
+
+.div_leaf {
+  /*叶子节点 不在有div元素*/
+  display: inline-block;
+  width: 100px;
+  height: 50px;
+}
+
+.div_inline_block_100_50 {
+  display: inline-block;
+  width: 100px;
+  height: 50px;
+}
+
+.div_inline {
+  /*取消  使用span等inline标签*/
+  display: inline;
+}
