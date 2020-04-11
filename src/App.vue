@@ -1,9 +1,17 @@
 <template>
   <div id="app">
-<!--    <div id="nav">-->
-<!--      <router-link to="/">Home</router-link> |-->
-<!--      <router-link to="/about">About</router-link>-->
-<!--    </div>-->
+      <div style="display: flex;justify-content: space-around">
+          <div>消息</div>
+          <div>搜索</div>
+          <div>设置</div>
+
+          <!--# 仿 pycharm风格  另设置一处,查找一处-->
+          <!--# 左侧 root的分类叉树,新增 删除-->
+          <!--# 中上 select查找 其下分类查找-->
+          <!--# 中间改变-->
+          <!--# 右侧消息列表,类似弹幕-->
+          <!--# 最下输出-->
+      </div>
     <router-view/>
   </div>
 </template>

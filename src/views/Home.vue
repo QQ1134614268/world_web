@@ -1,13 +1,17 @@
 <template>
   <div class="hello">
+    <div>
+      <div>消息</div>
+    </div>
     <h1>{{ webSite }}</h1>
     <div>
       <a href="/btree">BTree</a>
     </div>
     <div>
-      <a href="https://vuejs.org" target="_blank">Login</a>
+      <a href="/user/login">Login</a>
     </div>
-    <div><a href="http://www.beian.miit.gov.cn" target="_blank">皖ICP备20002024号-1</a>
+    <div>
+      <a href="http://www.beian.miit.gov.cn" target="_blank">皖ICP备20002024号-1</a>
     </div>
   </div>
 </template>

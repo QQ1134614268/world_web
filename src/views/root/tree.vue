@@ -64,9 +64,7 @@
       async getAllNodes() {
         let url = '/btree_api/getAllNodes';
         let result = await this.$get(url);
-        console.log(result.data)
         this.data = result.data.data;
-        console.log(this.data)
       },
       // allowDrop(draggingNode, dropNode, type) {
       //   return type !== 'inner';
@@ -75,19 +73,14 @@
         // console.log({draggingNode: draggingNode, dropNode: dropNode})
       },
       async moveNode(draggingNode, dropNode, dropType, ev) {
-        console.log(draggingNode.data.id, draggingNode.data.value)
-        console.log(dropNode.data.id, dropNode.data.value)
         let data = {id: draggingNode.data.id, targetId: dropNode.data.id, dropType: dropType}
         let url = '/btree_api/moveNode';
         await this.$postJson(url, data);
         dropNode.children.push(draggingNode);
       },
       async addNode() {
-        console.log('addNode');
         let url = '/btree_api/addNode';
-        console.log({id: this.nodeData.id, value: this.value});
         let result = await this.$postJson(url, {id: this.nodeData.id, value: this.value});
-        console.log('addNode');
         this.nodeData.children.push(result.data.data);
         this.dialogVisible = false
       },
@@ -100,7 +93,6 @@
         this.updateNodeValue = data
       },
       async updateNode(data) {
-        console.log('updateNode')
         this.updateNodeValue = data.value;
         this.updateDialogVisible = true;
         let url = '/btree_api/updateNode';
@@ -114,7 +106,6 @@
         return result
       },
       async delNode(node, data) {
-        console.log('del')
         let url = '/btree_api/delNode';
         await this.$postJson(url, {id: data.id});
         const parent = node.parent;

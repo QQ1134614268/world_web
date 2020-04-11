@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
-// import Home from '../views/Home'
+import register from '../views/user/register.vue'
 import login from '../views/user/login.vue'
 import tree from '../views/root/tree'
 import hello from '../views/hello/Hello'
@@ -11,8 +11,14 @@ Vue.use(VueRouter)
 const routes = [
   {
     path: '/',
-    name: 'Home',
-    component: Home
+    name: '/',
+    component: Home,
+    // component: register
+  },
+  {
+    path: '/user/register',
+    name: '/user/register',
+    component: register
   },
   {
     path: '/user/login',
@@ -43,7 +49,8 @@ const routes = [
 ]
 
 const router = new VueRouter({
-  routes
+  mode: 'history',
+  routes:routes
 })
 
 export default router
