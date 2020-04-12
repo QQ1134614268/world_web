@@ -5,6 +5,7 @@ import register from '../views/user/register.vue'
 import login from '../views/user/login.vue'
 import tree from '../views/root/tree'
 import hello from '../views/hello/Hello'
+import message from '@/views/message/message'
 
 Vue.use(VueRouter)
 
@@ -21,23 +22,28 @@ const routes = [
     component: register
   },
   {
+    path: '/message/message',
+    name: '/message/message',
+    component: message
+  },
+  {
     path: '/user/login',
     name: '/user/login',
     component: login
   },
   {
     path: '/btree',
-    name: 'btree',
+    name: '/btree',
     component: tree
   },
   {
     path: '/hello',
-    name: 'hello',
+    name: '/hello',
     component: hello
   },
   {
     path: '/about',
-    name: 'About',
+    name: '/about',
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
