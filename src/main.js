@@ -13,8 +13,6 @@ Vue.prototype.$axios = Axios;
 Vue.use(ElementUI)
 Vue.config.productionTip = false
 
-localStorage.setItem("key", "value");  //以“key”为名称存储一个值“value”
-
 const get = (url, params) => {
   return Axios({
     method: 'get',

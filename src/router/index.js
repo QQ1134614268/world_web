@@ -5,7 +5,11 @@ import register from '../views/user/register.vue'
 import login from '../views/user/login.vue'
 import tree from '../views/root/tree'
 import hello from '../views/hello/Hello'
+import Test from '../views/hello/Test'
 import message from '@/views/message/message'
+import model from '@/views/model/model'
+import member from '@/views/member/member'
+import diary from '@/views/apply/diary/diary'
 
 Vue.use(VueRouter)
 
@@ -27,6 +31,21 @@ const routes = [
     component: message
   },
   {
+    path: '/model/model',
+    name: '/model/model',
+    component: model
+  },
+  {
+    path: '/member/member',
+    name: '/member/member',
+    component: member
+  },
+  {
+    path: '/apply/diary/diary',
+    name: '/apply/diary/diary',
+    component: diary
+  },
+  {
     path: '/user/login',
     name: '/user/login',
     component: login
@@ -37,9 +56,14 @@ const routes = [
     component: tree
   },
   {
-    path: '/hello',
-    name: '/hello',
+    path: '/hello/hello',
+    name: '/hello/hello',
     component: hello
+  },
+  {
+    path: '/hello/test',
+    name: '/hello/test',
+    component: Test
   },
   {
     path: '/about',

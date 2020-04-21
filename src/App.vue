@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+      <h3><a href="/">home</a></h3>
       <div style="display: flex;justify-content: space-around">
           <div>消息</div>
           <div>搜索</div>

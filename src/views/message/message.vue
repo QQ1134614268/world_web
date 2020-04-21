@@ -5,6 +5,38 @@
         <div>{{userList}}</div>
         <div>-------------------------------------------------</div>
         <div>{{message}}</div>
+        <div>
+            <div>
+                批量处理
+                陌生人
+                <div v-for="(item,k) in attentionList" v-if="item.group==1">
+                    <div style="display: flex">
+                        <div>{{k}}</div>
+                        <div>
+                            {{item.username}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                亲人
+                朋友
+                唯一
+            </div>
+        </div>
+        <div>
+            <div>
+                <div>用户</div>
+            </div>
+            <div v-for="(item,k) in attentionList">
+                <div style="display: flex">
+                    <div>
+                        {{item.username}}
+                    </div>
+                </div>
+            </div>
+        </div>
         <div style="display: flex;">
             <div>查找</div>
             <input v-model="username"></input>
