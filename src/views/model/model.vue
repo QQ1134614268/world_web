@@ -62,7 +62,7 @@
     },
     methods: {
       async getAllNodes() {
-        let url = '/api/btree_api/getAllNodes';
+        let url = '/api/model';
         let result = await this.$get(url);
         this.data = result.data.data;
       },
