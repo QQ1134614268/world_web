@@ -8,6 +8,9 @@
         <div>
           <a href="/hello/test">test</a>
         </div>
+        <div>
+          <a href="/hello/test_component">test_component</a>
+        </div>
       </div>
       <div>
         <div>
@@ -48,7 +51,9 @@
 
 
 <script>
+
   export default {
+
     name: 'Home',
     data() {
       return {

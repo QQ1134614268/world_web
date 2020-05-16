@@ -1,11 +1,11 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
-import register from '../views/user/register.vue'
-import login from '../views/user/login.vue'
-import tree from '../views/root/tree'
-import hello from '../views/hello/Hello'
-import Test from '../views/hello/Test'
+import Home from '@/views/Home.vue'
+import register from '@/views/user/register.vue'
+import login from '@/views/user/login.vue'
+import tree from '@/views/root/tree'
+import hello from '@/views/hello/Hello'
+import test_component from '@/views/hello/test_component'
 import message from '@/views/message/message'
 import model from '@/views/model/model'
 import member from '@/views/member/member'
@@ -61,9 +61,9 @@ const routes = [
     component: hello
   },
   {
-    path: '/hello/test',
-    name: '/hello/test',
-    component: Test
+    path: '/hello/test_component',
+    name: '/hello/test_component',
+    component: test_component
   },
   {
     path: '/about',
