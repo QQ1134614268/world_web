@@ -11,6 +11,9 @@
         <div>
           <a href="/hello/test_component">test_component</a>
         </div>
+        <div>
+          <a href="/hello/test_popup">test_popup</a>
+        </div>
       </div>
       <div>
         <div>

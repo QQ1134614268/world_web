@@ -1,8 +1,8 @@
 <template>
     <div>
-        <div> 测试导入对话框</div>
+        <div><h3> 测试导入对话框</h3></div>
         <div>
-            <err msg="this is test">
+            <err msg="this is err test dialog message!">
             </err>
         </div>
     </div>

@@ -6,6 +6,7 @@ import login from '@/views/user/login.vue'
 import tree from '@/views/root/tree'
 import hello from '@/views/hello/Hello'
 import test_component from '@/views/hello/test_component'
+import test_popup from '@/views/hello/test_popup'
 import message from '@/views/message/message'
 import model from '@/views/model/model'
 import member from '@/views/member/member'
@@ -64,6 +65,11 @@ const routes = [
     path: '/hello/test_component',
     name: '/hello/test_component',
     component: test_component
+  },
+  {
+    path: '/hello/test_popup',
+    name: '/hello/test_popup',
+    component: test_popup
   },
   {
     path: '/about',
